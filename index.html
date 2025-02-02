@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crie seu avatar | Leonardo Sica Vote 14 OAB</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      #canvasHighRes {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="modelos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-0 col-md-0 col-lg-3"></div>
+          <div class="col-6 col-md-5 col-lg-3 mod1">
+            <a href="index.html#canvasContainer5">
+              <img src="mod5.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-6 col-md-5 col-lg-3 mod1">
+            <a href="index.html#canvasContainer1">
+              <img src="mod1.png" alt="" />
+            </a>
+          </div>
+          <div class="col-0 col-md-0 col-lg-3"></div>
+
+          <div class="col-4 col-md-4 col-lg-3">
+            <a href="index.html#canvasContainer2">
+              <img src="mod2.png" alt="" />
+            </a>
+          </div>
+          <div class="col-4 col-md-4 col-lg-3">
+            <a href="index.html#canvasContainer3">
+              <img src="mod3.png" alt="" />
+            </a>
+          </div>
+          <div class="col-4 col-md-4 col-lg-3">
+            <a href="index.html#canvasContainer4">
+              <img src="mod4.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="texto">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7">
+            <p>
+              Ou se preferir, você também pode criar seu card personalizado e
+              declarar apoio à Chapa Mudança com seu nome, cargo e subseção.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modelos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-2 col-md-3 col-lg-4"></div>
+          <div class="col-8 col-md-6 col-lg-3 mod1">
+            <a href="https://card.oabsempreemfrente.com.br/" target="_blank">
+              <img src="card.png" alt="" />
+            </a>
+          </div>
+          <div class="col-2 col-md-3 col-lg-4"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="laranja"></div>
+
+    <div id="canvasContainer2" class="canvas-container">
+      <canvas id="canvas2" width="300" height="300"></canvas>
+      <canvas id="canvasHighRes2" width="1200" height="1200"></canvas>
+      <input type="file" id="overlayImageInput2" accept="image/*" />
+      <label for="overlayImageInput2">
+        <i class="fas fa-camera"></i> Escolha uma foto
+      </label>
+      <div class="controls">
+        <button id="moveLeftBtn2">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M35.8331 19.7084V23.2917H14.3331L24.1873 33.1459L21.6431 35.6901L7.45312 21.5001L21.6431 7.31006L24.1873 9.85423L14.3331 19.7084H35.8331Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="moveUpBtn2">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.2916 35.8331H19.7083V14.3331L9.85411 24.1873L7.30994 21.6431L21.4999 7.45313L35.6899 21.6431L33.1458 24.1873L23.2916 14.3331V35.8331Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="moveRightBtn2">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.16687 23.2916V19.7083H28.6669L18.8127 9.85411L21.3569 7.30994L35.5469 21.4999L21.3569 35.6899L18.8127 33.1458L28.6669 23.2916H7.16687Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="moveDownBtn2">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.7084 7.16687H23.2917L23.2917 28.6669L33.1459 18.8127L35.6901 21.3569L21.5001 35.5469L7.31006 21.3569L9.85423 18.8127L19.7084 28.6669L19.7084 7.16687Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="decreaseSizeBtn2">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M34.0418 23.2879H8.9585V19.7046H34.0418V23.2879Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="increaseSizeBtn2">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M34.0418 23.2879H23.2918V34.0379H19.7085V23.2879H8.9585V19.7046H19.7085V8.95459H23.2918V19.7046H34.0418V23.2879Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+      </div>
+      <button id="downloadJpgBtn2" class="down-btn">Salvar Imagem</button>
+      <button id="shareJpgBtn2" class="share-btn" style="display: none">
+        Compartilhar
+      </button>
+    </div>
+
+    <div id="canvasContainer3" class="canvas-container">
+      <canvas id="canvas3" width="300" height="300"></canvas>
+      <canvas id="canvasHighRes3" width="1200" height="1200"></canvas>
+      <input type="file" id="overlayImageInput3" accept="image/*" />
+      <label for="overlayImageInput3">
+        <i class="fas fa-camera"></i> Escolha uma foto
+      </label>
+      <div class="controls">
+        <button id="moveLeftBtn3">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M35.8331 19.7084V23.2917H14.3331L24.1873 33.1459L21.6431 35.6901L7.45312 21.5001L21.6431 7.31006L24.1873 9.85423L14.3331 19.7084H35.8331Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="moveUpBtn3">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.2916 35.8331H19.7083V14.3331L9.85411 24.1873L7.30994 21.6431L21.4999 7.45313L35.6899 21.6431L33.1458 24.1873L23.2916 14.3331V35.8331Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="moveRightBtn3">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.16687 23.2916V19.7083H28.6669L18.8127 9.85411L21.3569 7.30994L35.5469 21.4999L21.3569 35.6899L18.8127 33.1458L28.6669 23.2916H7.16687Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="moveDownBtn3">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.7084 7.16687H23.2917L23.2917 28.6669L33.1459 18.8127L35.6901 21.3569L21.5001 35.5469L7.31006 21.3569L9.85423 18.8127L19.7084 28.6669L19.7084 7.16687Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="decreaseSizeBtn3">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M34.0418 23.2879H8.9585V19.7046H34.0418V23.2879Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="increaseSizeBtn3">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M34.0418 23.2879H23.2918V34.0379H19.7085V23.2879H8.9585V19.7046H19.7085V8.95459H23.2918V19.7046H34.0418V23.2879Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+      </div>
+      <button id="downloadJpgBtn3" class="down-btn">Salvar Imagem</button>
+      <button id="shareJpgBtn3" class="share-btn" style="display: none">
+        Compartilhar
+      </button>
+    </div>
+
+    <div id="canvasContainer4" class="canvas-container">
+      <canvas id="canvas4" width="300" height="300"></canvas>
+      <canvas id="canvasHighRes4" width="1200" height="1200"></canvas>
+      <input type="file" id="overlayImageInput4" accept="image/*" />
+      <label for="overlayImageInput4">
+        <i class="fas fa-camera"></i> Escolha uma foto
+      </label>
+      <div class="controls">
+        <button id="moveLeftBtn4">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M35.8331 19.7084V23.2917H14.3331L24.1873 33.1459L21.6431 35.6901L7.45312 21.5001L21.6431 7.31006L24.1873 9.85423L14.3331 19.7084H35.8331Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="moveUpBtn4">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.2916 35.8331H19.7083V14.3331L9.85411 24.1873L7.30994 21.6431L21.4999 7.45313L35.6899 21.6431L33.1458 24.1873L23.2916 14.3331V35.8331Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="moveRightBtn4">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.16687 23.2916V19.7083H28.6669L18.8127 9.85411L21.3569 7.30994L35.5469 21.4999L21.3569 35.6899L18.8127 33.1458L28.6669 23.2916H7.16687Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="moveDownBtn4">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.7084 7.16687H23.2917L23.2917 28.6669L33.1459 18.8127L35.6901 21.3569L21.5001 35.5469L7.31006 21.3569L9.85423 18.8127L19.7084 28.6669L19.7084 7.16687Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="decreaseSizeBtn4">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M34.0418 23.2879H8.9585V19.7046H34.0418V23.2879Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="increaseSizeBtn4">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M34.0418 23.2879H23.2918V34.0379H19.7085V23.2879H8.9585V19.7046H19.7085V8.95459H23.2918V19.7046H34.0418V23.2879Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+      </div>
+      <button id="downloadJpgBtn4" class="down-btn">Salvar Imagem</button>
+      <button id="shareJpgBtn4" class="share-btn" style="display: none">
+        Compartilhar
+      </button>
+    </div>
+
+    <div id="canvasContainer1" class="canvas-container">
+      <canvas id="canvas1" width="300" height="375"></canvas>
+      <canvas id="canvasHighRes1" width="960" height="1200"></canvas>
+      <input type="file" id="overlayImageInput1" accept="image/*" />
+      <label for="overlayImageInput1">
+        <i class="fas fa-camera"></i> Escolha uma foto
+      </label>
+      <div class="controls">
+        <button id="moveLeftBtn1">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M35.8331 19.7084V23.2917H14.3331L24.1873 33.1459L21.6431 35.6901L7.45312 21.5001L21.6431 7.31006L24.1873 9.85423L14.3331 19.7084H35.8331Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="moveUpBtn1">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.2916 35.8331H19.7083V14.3331L9.85411 24.1873L7.30994 21.6431L21.4999 7.45313L35.6899 21.6431L33.1458 24.1873L23.2916 14.3331V35.8331Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="moveRightBtn1">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.16687 23.2916V19.7083H28.6669L18.8127 9.85411L21.3569 7.30994L35.5469 21.4999L21.3569 35.6899L18.8127 33.1458L28.6669 23.2916H7.16687Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="moveDownBtn1">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.7084 7.16687H23.2917L23.2917 28.6669L33.1459 18.8127L35.6901 21.3569L21.5001 35.5469L7.31006 21.3569L9.85423 18.8127L19.7084 28.6669L19.7084 7.16687Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="decreaseSizeBtn1">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M34.0418 23.2879H8.9585V19.7046H34.0418V23.2879Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="increaseSizeBtn1">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M34.0418 23.2879H23.2918V34.0379H19.7085V23.2879H8.9585V19.7046H19.7085V8.95459H23.2918V19.7046H34.0418V23.2879Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+      </div>
+      <button id="downloadJpgBtn1" class="down-btn">Salvar Imagem</button>
+      <button id="shareJpgBtn1" class="share-btn" style="display: none">
+        Compartilhar
+      </button>
+    </div>
+
+    <div id="canvasContainer5" class="canvas-container">
+      <canvas id="canvas5" width="300" height="375"></canvas>
+      <canvas id="canvasHighRes5" width="960" height="1200"></canvas>
+      <input type="file" id="overlayImageInput5" accept="image/*" />
+      <label for="overlayImageInput5">
+        <i class="fas fa-camera"></i> Escolha uma foto
+      </label>
+      <div class="controls">
+        <button id="moveLeftBtn5">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M35.8331 19.7084V23.2917H14.3331L24.1873 33.1459L21.6431 35.6901L7.45312 21.5001L21.6431 7.31006L24.1873 9.85423L14.3331 19.7084H35.8331Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="moveUpBtn5">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.2916 35.8331H19.7083V14.3331L9.85411 24.1873L7.30994 21.6431L21.4999 7.45313L35.6899 21.6431L33.1458 24.1873L23.2916 14.3331V35.8331Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="moveRightBtn5">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.16687 23.2916V19.7083H28.6669L18.8127 9.85411L21.3569 7.30994L35.5469 21.4999L21.3569 35.6899L18.8127 33.1458L28.6669 23.2916H7.16687Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="moveDownBtn5">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.7084 7.16687H23.2917L23.2917 28.6669L33.1459 18.8127L35.6901 21.3569L21.5001 35.5469L7.31006 21.3569L9.85423 18.8127L19.7084 28.6669L19.7084 7.16687Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="decreaseSizeBtn5">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M34.0418 23.2879H8.9585V19.7046H34.0418V23.2879Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+        <button id="increaseSizeBtn5">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M34.0418 23.2879H23.2918V34.0379H19.7085V23.2879H8.9585V19.7046H19.7085V8.95459H23.2918V19.7046H34.0418V23.2879Z"
+              fill="#1C1F2A"
+            />
+          </svg>
+        </button>
+      </div>
+      <button id="downloadJpgBtn5" class="down-btn">Salvar Imagem</button>
+      <button id="shareJpgBtn5" class="share-btn" style="display: none">
+        Compartilhar
+      </button>
+    </div>
+
+    <script>
+      const baseImages = [
+        new Image(),
+        new Image(),
+        new Image(),
+        new Image(),
+        new Image(),
+      ];
+      baseImages[0].src = "molde1.png";
+      baseImages[1].src = "molde2.png";
+      baseImages[2].src = "molde3.png";
+      baseImages[3].src = "molde4.png";
+      baseImages[4].src = "molde5.png";
+
+      const canvases = [
+        document.getElementById("canvas1"),
+        document.getElementById("canvas2"),
+        document.getElementById("canvas3"),
+        document.getElementById("canvas4"),
+        document.getElementById("canvas5"),
+      ];
+      const canvasHighReses = [
+        document.getElementById("canvasHighRes1"),
+        document.getElementById("canvasHighRes2"),
+        document.getElementById("canvasHighRes3"),
+        document.getElementById("canvasHighRes4"),
+        document.getElementById("canvasHighRes5"),
+      ];
+      const contexts = canvases.map((canvas) => canvas.getContext("2d"));
+      const contextsHighRes = canvasHighReses.map((canvas) =>
+        canvas.getContext("2d")
+      );
+
+      let overlayImages = [
+        new Image(),
+        new Image(),
+        new Image(),
+        new Image(),
+        new Image(),
+      ];
+      let offsetsX = [0, 0, 0, 0];
+      let offsetsY = [0, 0, 0, 0];
+      let offsetsXHighRes = [0, 0, 0, 0];
+      let offsetsYHighRes = [0, 0, 0, 0];
+      let scales = [1, 1, 1, 1];
+      let isOverlayImageLoaded = [false, false, false, false];
+
+      baseImages.forEach((baseImage, index) => {
+        baseImage.onload = () => {
+          drawCanvas(index);
+        };
+      });
+
+      function handleImageInputChange(index) {
+        return (event) => {
+          const file = event.target.files[0];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+              overlayImages[index].src = e.target.result;
+              overlayImages[index].onload = () => {
+                isOverlayImageLoaded[index] = true;
+                resetTransformations(index);
+                drawCanvas(index);
+              };
+            };
+            reader.readAsDataURL(file);
+          }
+        };
+      }
+
+      document
+        .getElementById("overlayImageInput1")
+        .addEventListener("change", handleImageInputChange(0));
+      document
+        .getElementById("overlayImageInput2")
+        .addEventListener("change", handleImageInputChange(1));
+      document
+        .getElementById("overlayImageInput3")
+        .addEventListener("change", handleImageInputChange(2));
+      document
+        .getElementById("overlayImageInput4")
+        .addEventListener("change", handleImageInputChange(3));
+      document
+        .getElementById("overlayImageInput5")
+        .addEventListener("change", handleImageInputChange(4));
+
+      function resetTransformations(index) {
+        offsetsX[index] = 0;
+        offsetsY[index] = 0;
+        offsetsXHighRes[index] = 0;
+        offsetsYHighRes[index] = 0;
+        scales[index] = 1;
+      }
+
+      function drawCanvas(index) {
+        const context = contexts[index];
+        const contextHighRes = contextsHighRes[index];
+        const canvas = canvases[index];
+        const canvasHighRes = canvasHighReses[index];
+        const baseImage = baseImages[index];
+
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        contextHighRes.clearRect(
+          0,
+          0,
+          canvasHighRes.width,
+          canvasHighRes.height
+        );
+
+        if (isOverlayImageLoaded[index]) {
+          drawImageOnCanvas(
+            context,
+            canvas,
+            overlayImages[index],
+            offsetsX[index],
+            offsetsY[index],
+            scales[index]
+          );
+          drawImageOnCanvas(
+            contextHighRes,
+            canvasHighRes,
+            overlayImages[index],
+            offsetsXHighRes[index],
+            offsetsYHighRes[index],
+            scales[index]
+          );
+        }
+
+        context.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
+        contextHighRes.drawImage(
+          baseImage,
+          0,
+          0,
+          canvasHighRes.width,
+          canvasHighRes.height
+        );
+      }
+
+      function drawImageOnCanvas(
+        context,
+        canvas,
+        image,
+        offsetXValue,
+        offsetYValue,
+        scale
+      ) {
+        const imgAspectRatio = image.naturalWidth / image.naturalHeight;
+        const canvasAspectRatio = canvas.width / canvas.height;
+
+        let drawWidth, drawHeight;
+
+        if (imgAspectRatio > canvasAspectRatio) {
+          drawHeight = canvas.height;
+          drawWidth = drawHeight * imgAspectRatio;
+        } else {
+          drawWidth = canvas.width;
+          drawHeight = drawWidth / imgAspectRatio;
+        }
+
+        drawWidth *= scale;
+        drawHeight *= scale;
+
+        let x = (canvas.width - drawWidth) / 2 + offsetXValue;
+        let y = (canvas.height - drawHeight) / 2 + offsetYValue;
+
+        context.drawImage(image, x, y, drawWidth, drawHeight);
+      }
+
+      function updateCanvasTransform(index) {
+        drawCanvas(index);
+      }
+
+      function handleMoveButtonClick(index, direction) {
+        return () => {
+          switch (direction) {
+            case "left":
+              offsetsX[index] -= 0.02 * canvases[index].width;
+              offsetsXHighRes[index] -= 0.02 * canvasHighReses[index].width;
+              break;
+            case "right":
+              offsetsX[index] += 0.02 * canvases[index].width;
+              offsetsXHighRes[index] += 0.02 * canvasHighReses[index].width;
+              break;
+            case "up":
+              offsetsY[index] -= 0.02 * canvases[index].height;
+              offsetsYHighRes[index] -= 0.02 * canvasHighReses[index].height;
+              break;
+            case "down":
+              offsetsY[index] += 0.02 * canvases[index].height;
+              offsetsYHighRes[index] += 0.02 * canvasHighReses[index].height;
+              break;
+          }
+          updateCanvasTransform(index);
+        };
+      }
+
+      function handleScaleButtonClick(index, action) {
+        return () => {
+          if (action === "increase") {
+            scales[index] += 0.1;
+          } else {
+            scales[index] = Math.max(scales[index] - 0.1, 0.1);
+          }
+          updateCanvasTransform(index);
+        };
+      }
+
+      document
+        .getElementById("moveLeftBtn1")
+        .addEventListener("click", handleMoveButtonClick(0, "left"));
+      document
+        .getElementById("moveRightBtn1")
+        .addEventListener("click", handleMoveButtonClick(0, "right"));
+      document
+        .getElementById("moveUpBtn1")
+        .addEventListener("click", handleMoveButtonClick(0, "up"));
+      document
+        .getElementById("moveDownBtn1")
+        .addEventListener("click", handleMoveButtonClick(0, "down"));
+      document
+        .getElementById("increaseSizeBtn1")
+        .addEventListener("click", handleScaleButtonClick(0, "increase"));
+      document
+        .getElementById("decreaseSizeBtn1")
+        .addEventListener("click", handleScaleButtonClick(0, "decrease"));
+
+      document
+        .getElementById("moveLeftBtn2")
+        .addEventListener("click", handleMoveButtonClick(1, "left"));
+      document
+        .getElementById("moveRightBtn2")
+        .addEventListener("click", handleMoveButtonClick(1, "right"));
+      document
+        .getElementById("moveUpBtn2")
+        .addEventListener("click", handleMoveButtonClick(1, "up"));
+      document
+        .getElementById("moveDownBtn2")
+        .addEventListener("click", handleMoveButtonClick(1, "down"));
+      document
+        .getElementById("increaseSizeBtn2")
+        .addEventListener("click", handleScaleButtonClick(1, "increase"));
+      document
+        .getElementById("decreaseSizeBtn2")
+        .addEventListener("click", handleScaleButtonClick(1, "decrease"));
+
+      document
+        .getElementById("moveLeftBtn3")
+        .addEventListener("click", handleMoveButtonClick(2, "left"));
+      document
+        .getElementById("moveRightBtn3")
+        .addEventListener("click", handleMoveButtonClick(2, "right"));
+      document
+        .getElementById("moveUpBtn3")
+        .addEventListener("click", handleMoveButtonClick(2, "up"));
+      document
+        .getElementById("moveDownBtn3")
+        .addEventListener("click", handleMoveButtonClick(2, "down"));
+      document
+        .getElementById("increaseSizeBtn3")
+        .addEventListener("click", handleScaleButtonClick(2, "increase"));
+      document
+        .getElementById("decreaseSizeBtn3")
+        .addEventListener("click", handleScaleButtonClick(2, "decrease"));
+
+      document
+        .getElementById("moveLeftBtn4")
+        .addEventListener("click", handleMoveButtonClick(3, "left"));
+      document
+        .getElementById("moveRightBtn4")
+        .addEventListener("click", handleMoveButtonClick(3, "right"));
+      document
+        .getElementById("moveUpBtn4")
+        .addEventListener("click", handleMoveButtonClick(3, "up"));
+      document
+        .getElementById("moveDownBtn4")
+        .addEventListener("click", handleMoveButtonClick(3, "down"));
+      document
+        .getElementById("increaseSizeBtn4")
+        .addEventListener("click", handleScaleButtonClick(3, "increase"));
+      document
+        .getElementById("decreaseSizeBtn4")
+        .addEventListener("click", handleScaleButtonClick(3, "decrease"));
+
+      document
+        .getElementById("moveLeftBtn5")
+        .addEventListener("click", handleMoveButtonClick(4, "left"));
+      document
+        .getElementById("moveRightBtn5")
+        .addEventListener("click", handleMoveButtonClick(4, "right"));
+      document
+        .getElementById("moveUpBtn5")
+        .addEventListener("click", handleMoveButtonClick(4, "up"));
+      document
+        .getElementById("moveDownBtn5")
+        .addEventListener("click", handleMoveButtonClick(4, "down"));
+      document
+        .getElementById("increaseSizeBtn5")
+        .addEventListener("click", handleScaleButtonClick(4, "increase"));
+      document
+        .getElementById("decreaseSizeBtn5")
+        .addEventListener("click", handleScaleButtonClick(4, "decrease"));
+
+      function handleDownloadButtonClick(index) {
+        return () => {
+          const imgData = canvasHighReses[index].toDataURL("image/jpeg", 1.0);
+          const link = document.createElement("a");
+          link.href = imgData;
+          link.download = `seuavatar-modelo${index + 1}.jpg`;
+          link.click();
+        };
+      }
+
+      function handleShareButtonClick(index) {
+        return () => {
+          const imgData = canvasHighReses[index].toDataURL("image/jpeg", 1.0);
+          fetch(imgData)
+            .then((res) => res.blob())
+            .then((blob) => {
+              const file = new File(
+                [blob],
+                `seuavatar-modelo${index + 1}.jpg`,
+                { type: blob.type }
+              );
+              if (navigator.share) {
+                navigator
+                  .share({
+                    files: [file],
+                    title: "Seu Avatar",
+                    text: "Baixe seu avatar da Chapa 14",
+                  })
+                  .catch((error) =>
+                    console.log("Erro ao compartilhar:", error)
+                  );
+              }
+            });
+        };
+      }
+
+      document
+        .getElementById("downloadJpgBtn1")
+        .addEventListener("click", handleDownloadButtonClick(0));
+      document
+        .getElementById("downloadJpgBtn2")
+        .addEventListener("click", handleDownloadButtonClick(1));
+      document
+        .getElementById("downloadJpgBtn3")
+        .addEventListener("click", handleDownloadButtonClick(2));
+      document
+        .getElementById("downloadJpgBtn4")
+        .addEventListener("click", handleDownloadButtonClick(3));
+      document
+        .getElementById("downloadJpgBtn5")
+        .addEventListener("click", handleDownloadButtonClick(4));
+
+      document
+        .getElementById("shareJpgBtn1")
+        .addEventListener("click", handleShareButtonClick(0));
+      document
+        .getElementById("shareJpgBtn2")
+        .addEventListener("click", handleShareButtonClick(1));
+      document
+        .getElementById("shareJpgBtn3")
+        .addEventListener("click", handleShareButtonClick(2));
+      document
+        .getElementById("shareJpgBtn4")
+        .addEventListener("click", handleShareButtonClick(3));
+      document
+        .getElementById("shareJpgBtn5")
+        .addEventListener("click", handleShareButtonClick(4));
+
+      // Mostrar o botão de compartilhamento apenas em dispositivos móveis
+      if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) {
+        document.querySelectorAll(".share-btn").forEach((button) => {
+          button.style.display = "inline-block";
+        });
+        document.querySelectorAll(".down-btn").forEach((button) => {
+          button.style.display = "none";
+        });
+      }
+    </script>
+  </body>
+</html>
